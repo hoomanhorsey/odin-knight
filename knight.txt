@@ -1,0 +1,22 @@
+Knight can move
+
++2 in any direction. Then +1 but only to the left or right of direction it travelled from.
+
+
+If knights position is (x,y), then a legal move is.
+
+East
+(x+2, y+1)
+(x+2, y-1)
+
+West
+(x-2, y+1)
+(x-2, y-1)
+
+North
+(y+2, x+1)
+(y+2, x-1)
+
+South
+(y-2, x+1)
+(y-2, x-1)
