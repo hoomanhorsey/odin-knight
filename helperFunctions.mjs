@@ -5,17 +5,18 @@ function mapIndex(coords) {
 function getIndex(index) {
   let x = index % 8;
   let y = Math.floor(index / 8);
-  console.log(x, y);
+  // console.log(x, y);
   return { x, y };
 }
 
 function createMatrix(boardArray) {
   for (let y = 0; y < 8; y++) {
     for (let x = 0; x < 8; x++) {
-      console.log(y, x);
-      const tempArray = calcLegalMoves(y, x);
-      console.log(tempArray);
-      boardArray.push([tempArray]);
+      // console.log(y, x);
+      // const tempArray = calcLegalMoves(y, x);
+      // console.log("temp array");
+      // console.log(tempArray);
+      boardArray.push(calcLegalMoves(y, x));
     }
   }
   return boardArray;
