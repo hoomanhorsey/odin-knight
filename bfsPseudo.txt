@@ -1,0 +1,36 @@
+For the function findShortest()
+
+***Arguments*** 
+- starting position (x, y)
+- final position (a, b)
+
+***Variables
+- const queueArray
+
+start with the root node ( x, y ) co-ordinates
+- convert rootnode to index
+- enqueue rootnode to queueArray, followed by null
+
+enter "Recursive Search Function"
+- look up first element in queueArray (which is an index number)
+- loop through items in queueArray[indexNumber] (using array.length)
+    - check if item is final position - if YES, then **TODO insert consequences***
+    - if not, convert co-ords to index, 
+        - enqueue index in queueArray
+        - continue loop until end of Array, then enqueue null to queueArray
+    -re-enter "Recursive Search Function"
+
+
+
+look up index position to show array of next positions, if any.
+- check if next positions include final position.
+    - if final position included **THEN WIN, BUT MUST TRACK PATH SOMEHOW
+    - else
+        - check for first co-ord  (convert to index)
+        - enqueu to queueArray,
+        - return to check for first co-ord, until end.
+
+
+
+
+

@@ -1,9 +1,9 @@
-Knight can move
+***Knight moves***
 
 +2 in any direction. Then +1 but only to the left or right of direction it travelled from.
 
 
-If knights position is (x,y), then a legal move is.
+If knights position is (x,y), then a legal move is any of the following:
 
 East
 (x+2, y+1)
@@ -20,3 +20,25 @@ North
 South
 (y-2, x+1)
 (y-2, x-1)
+
+
+***Knight Moves - Legal***
+
+The board consists of a matrix 8 x 8, [0-7]
+
+Basically you will need to create a function that checks if the move is legal, isLegal(). 
+This function:
+1 - calculates the starting position of the knight.
+2 - And then calculates all the permiited moves of the knight from above. 
+    For example, if the starting position is [0,0], then the (x+2, y-1) move is not legal as it moves it below the board
+    However, the (x+2, y+1) is as it takes the position from [0,0] to [2,1]
+
+
+
+*** Creating the board***
+
+Can I create the board by going through each position [0,0] through to [7,7] and then creating an array for each position 
+which is filled with only those moves that are legal, using a function that only adds legal moves to the array?
+
+
+
