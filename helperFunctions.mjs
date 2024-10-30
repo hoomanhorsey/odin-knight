@@ -9,13 +9,16 @@ function getIndex(index) {
   return { x, y };
 }
 
-function createMatrix(boardArray) {
+function createMatrix() {
+  // declare boardArray for adjacency matrix
+  const boardArray = [];
   for (let y = 0; y < 8; y++) {
     for (let x = 0; x < 8; x++) {
       // console.log(y, x);
       // const tempArray = calcLegalMoves(y, x);
       // console.log("temp array");
       // console.log(tempArray);
+      // console.log(calcLegalMoves(y, x));
       boardArray.push(calcLegalMoves(y, x));
     }
   }
@@ -74,6 +77,7 @@ function calcLegalMoves(y, x) {
   } else {
     tempArray.push([x + 1, y - 2]);
   }
+  // console.log(tempArray);
   return tempArray;
 }
 
